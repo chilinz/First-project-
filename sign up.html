@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        sign up
+    </title>
+    <style>
+       
+        
+        .eee{
+            font-family: cursive;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        width: 30%;
+        font-size: 30px;
+        color: lightgreen;
+        background-color: transparent;
+        }
+        .eee:focus{
+            outline: none;
+        }
+        
+        .Email{
+            font-family: cursive;
+        
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        width: 30%;
+        font-size: 30px;
+        color: lightgreen;
+        background-color: transparent;
+        }
+        .Email:focus{
+            outline: none;
+        }
+        .pass{
+            font-family: cursive;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        width: 30%;
+        font-size: 30px;
+        color: lightgreen;
+        background-color: transparent;
+        }
+        .pass:focus{
+            outline: none;
+        }
+        .in{
+            background-color: lightgreen;
+            color: black;
+            font-weight: bold;
+        border-color: transparent;
+        border-radius: 5px;
+        line-height: 20px;
+        width: 30%;
+        }
+        .Email:focus{
+            outline: none;
+        }
+        .check{
+            color: lightgreen;
+        }
+        
+            
+           </style>
+           <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    
+          
+</head>
+<body>
+    <div style="border-radius: 50px;   height: 100%; width: 100%; margin-top: 9rem; background-color: black; color:lightgreen; text-align:center;">
+        <img src="ttt.jpg" alt=".ttt" style="margin-top: 15%;">
+    
+        <form  style="margin-top: 5%;" action="">
+            <div id="demo">
+               
+              </div><br>
+                <input class="eee" type="label" name="Username" id="" placeholder="Username">
+            <br><br>
+                <input  class="Email" type="label" name="Email" id="" placeholder="Email">
+            <br><br>
+                    <input class="pass" type="label" name="password " id="" placeholder="password">
+            <br><br>
+            <input  class="pass"type="label" name=" Confirm password " id="" placeholder="confirm password">
+            <br><br>
+            <button class="in" >sign in</button>
+            <br>
+            <input type="checkbox" name="save password" id="" class="check">save password
+    
+            
+        </form>
+        <button onclick="Myclick()" class="btn btn-danger">Clcik</button>
+    
+    </div>
+    
+<script src="../bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function Myclick(){
+            document.getElementById('demo').innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>`
+        }
+    </script>
+</body>
+
+</html>
